@@ -1,0 +1,7 @@
+<h1>Editing Target</h1>
+
+<%= render 'form', target: @target %>
+
+<%= link_to 'Show', @target %> |
+<%= link_to 'Next', edit_target_path(@target.next) %> |
+<%= link_to 'Back', targets_path %>

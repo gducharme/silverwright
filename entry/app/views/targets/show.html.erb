@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @target.file.blob.filename %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= image_tag polymorphic_url(@target.file) %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @target.label %>
+</p>
+
+<%= link_to 'Edit', edit_target_path(@target) %> |
+<%= link_to 'Back', targets_path %>
